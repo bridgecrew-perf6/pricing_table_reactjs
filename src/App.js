@@ -1,5 +1,4 @@
 import './App.css';
-import CheckIcon from '@mui/icons-material/Check';
 
 function App() {
   return (
