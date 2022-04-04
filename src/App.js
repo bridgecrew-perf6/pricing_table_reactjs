@@ -1,25 +1,27 @@
 import './App.css';
-import CheckIcon from '@mui/icons-material/Check';
 
-function App() {
+function App() {//this function will get called from index.js
   return (
     <div className="wrapper">
-      <Card1 />
-      <Card2 />
-      <Card3 />
+      <Card1 /> {/* Here the first card will get called */}
+      <Card2 /> {/* Here the second card will get called */}
+      <Card3 /> {/* Here the third card will get called */}
     </div>
   );
 }
 
+// first card
 function Card1(){
   return(
     <div className="card">
       <div className="card_body">
+        {/* card heeader */}
         <div className="card_header">
             <h5 className="card_title">FREE</h5>
             <h2 className="card_price">$0<span class="period">/month</span></h2>
         </div>
         <hr></hr>
+        {/* body of the card is here */}
         <div className="card_description">
         <ul>
               <li className="list_checked">Single User</li>
@@ -32,6 +34,7 @@ function Card1(){
               <li className="text-muted">Monthly Status Reports</li>
             </ul>
         </div>
+        {/* card button will be shown here */}
         <div className="card_footer">
              <button className="card_btn">BUTTON</button>
         </div>
@@ -40,15 +43,18 @@ function Card1(){
   )
 }
 
+// second card
 function Card2(){
   return(
     <div className="card">
       <div className="card_body">
+      {/* card heeader */}
       <div className="card_header">
             <h5 className="card_title">PLUS</h5>
             <h2 className="card_price">$9<span class="period">/month</span></h2>
         </div>
         <hr></hr>
+        {/* body of the card is here */}
         <div className="card_description">
         <ul>
               <li className="list_checked"><b>5 Users</b></li>
@@ -61,6 +67,7 @@ function Card2(){
               <li className="text-muted">Monthly Status Reports</li>
             </ul>
         </div>
+        {/* card button will be shown here */}
         <div className="card_footer">
              <button className="card_btn">BUTTON</button>
         </div>
@@ -69,15 +76,18 @@ function Card2(){
   )
 }
 
+// third card
 function Card3(){
   return(
     <div className="card">
       <div className="card_body">
+        {/* card heeader */}
       <div className="card_header">
             <h5 className="card_title">PRO</h5>
             <h2 className="card_price">$49<span class="period">/month</span></h2>
         </div>
         <hr></hr>
+        {/* body of the card is here */}
         <div className="card_description">
         <ul>
               <li className="list_checked">Unlimited User</li>
@@ -90,6 +100,7 @@ function Card3(){
               <li className="list_checked">Monthly Status Reports</li>
             </ul>
         </div>
+        {/* card button will be shown here */}
         <div className="card_footer">
              <button className="card_btn">BUTTON</button>
         </div>
